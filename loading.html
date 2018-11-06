@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>loading</title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			.circleBox{
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-top: -50px;
+				margin-left: -50px;
+			}
+			.circleBox p{
+				width: 30px;
+				height: 30px;
+				background: white;
+				border-radius: 50%;
+				position: absolute;
+				animation: move 0.8s infinite linear;
+			}
+			.circleBox p:nth-of-type(1){left: 0;top: 0;}
+			.circleBox p:nth-of-type(2){right: 0;top: 0;}
+			.circleBox p:nth-of-type(3){right: 0;bottom: 0;}
+			.circleBox p:nth-of-type(4){left: 0;bottom: 0;}
+			.circleBox:nth-of-type(2){transform: rotate(45deg);}
+			@keyframes move{
+				0%{transform: scale(0);}
+				50%{transform: scale(1);}
+				100%{transform: scale(0);}
+			}
+			.circleBox:nth-of-type(1) p:nth-of-type(1){animation-delay: -0.1s;}
+			.circleBox:nth-of-type(2) p:nth-of-type(1){animation-delay: -0.2s;}
+			.circleBox:nth-of-type(1) p:nth-of-type(2){animation-delay: -0.3s;}
+			.circleBox:nth-of-type(2) p:nth-of-type(2){animation-delay: -0.4s;}
+			.circleBox:nth-of-type(1) p:nth-of-type(3){animation-delay: -0.5s;}
+			.circleBox:nth-of-type(2) p:nth-of-type(3){animation-delay: -0.6s;}
+			.circleBox:nth-of-type(1) p:nth-of-type(4){animation-delay: -0.7s;}
+			.circleBox:nth-of-type(2) p:nth-of-type(4){animation-delay: -0.8s;}
+		</style>
+	</head>
+	
+	<body style="background: black;">
+		<div class="circleBox">
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+		</div>
+		<div class="circleBox">
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+		</div>
+	</body>
+</html>

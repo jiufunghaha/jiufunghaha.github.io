@@ -1,2 +1,2 @@
 # jiufunghaha.github.io
-姚锋的个人主页
+This is jiufung's page
